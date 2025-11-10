@@ -1,6 +1,6 @@
 package p1_data_structures.array;
 
-public interface IDynamicArray<T> {
+public interface IDynamicArray<T> extends Iterable<T> {
     
     int size();
 

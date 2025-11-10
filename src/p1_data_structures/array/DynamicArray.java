@@ -2,7 +2,7 @@ package p1_data_structures.array;
 
 import java.util.Iterator;
 
-public class DynamicArray<T> implements Iterable<T>, IDynamicArray<T> {
+public class DynamicArray<T> implements IDynamicArray<T> {
 
     T[] array;
 
@@ -91,7 +91,7 @@ public class DynamicArray<T> implements Iterable<T>, IDynamicArray<T> {
 
     @Override
     public void removeAt(int removeIndex) {
-        if(removeIndex>=size || removeIndex<0) throw new IndexOutOfBoundsException();
+        if(removeIndex >= size || removeIndex<0) throw new IndexOutOfBoundsException();
 
         T[] newArray = (T[]) new Object[size - 1];
         for(int i = 0, y = 0 ; i < size; i++, y++){
